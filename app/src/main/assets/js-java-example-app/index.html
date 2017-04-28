@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>JS - Java</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <section>
+    <h1>JS - Java Example App</h1>
+  </section>
+
+  <section>
+    <div class="gps-buttons">
+      <button class="btn-lg btn-success" id="gps-btn-start">Start</button>
+      <button class="btn-lg btn-warning hide" id="gps-btn-stop">Stop</button>
+    </div>
+
+    <div>
+      <h2>GPS Update delay [s]</h2>
+      <input type="number" id="gps-delay">
+    </div>
+
+    <div>
+      <h2>GPS Status</h2>
+
+      <span id="gps-status-on" class="tag success hide">On</span>
+      <span id="gps-status-off" class="tag warning">Off</span>
+    </div>
+
+    <div>
+      <h2>Current GPS Position</h2>
+
+      <span id="gps-update" class="tag success hide">Update</span>
+      <pre id="gps-cords-container" class="hide">
+        {x: <span id="gps-cords-x">-</span>, y: <span id="gps-cords-y">-</span>}
+      </pre>
+    </div>
+
+    <div>
+      <h2>Math.sum(1, 3.14, 'jazzy')</h2>
+      <button id="math-sum">Calc</button>
+    </div>
+  </section>
+
+  <script src="./js/NativeAppMock.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
